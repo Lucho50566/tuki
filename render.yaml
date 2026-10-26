@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tuki
+    runtime: node
+    plan: free
+    buildCommand: "echo sin dependencias"
+    startCommand: "node server.js"
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+    autoDeploy: true
